@@ -1,0 +1,11 @@
+[panel]
+# Sort =
+# SortPrev =
+# SortNext = 
+# SortReverse =
+SortByName = alt-n
+# SortByExt =
+# SortBySize =
+SortByMTime = alt-m
+# ScrollLeft =
+# ScrollRight =

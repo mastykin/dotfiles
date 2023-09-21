@@ -1,0 +1,36 @@
+{
+    "files.autoSave": "off",
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "on",
+    "editor.glyphMargin": true,
+    "editor.folding": true,
+    "workbench.editor.showTabs": false,
+    "editor.rulers": [
+        80
+    ],
+    "terminal.integrated.commandsToSkipShell": [
+        "workbench.view.explorer",
+        "search.action.focusSearchList",
+        "workbench.view.scm",
+        "workbench.view.debug"
+    ],
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, UseTab: Always, IndentWidth: 8, TabWidth: 8, BreakBeforeBraces: Linux, AllowShortIfStatementsOnASingleLine: false,  IndentCaseLabels: false, SortIncludes: false, ColumnLimit: 100 }",
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": false,
+    "keyboard.dispatch": "keyCode",
+    "cmake.configureOnOpen": false,
+    "extensions.ignoreRecommendations": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.renderWhitespace": "all",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 0,
+    "window.menuBarVisibility": "hidden",
+    "editor.detectIndentation": true,
+    "editor.fontFamily": "Noto Mono",
+    "markdown.preview.fontSize": 16,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "workbench.activityBar.visible": false,
+}

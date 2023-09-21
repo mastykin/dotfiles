@@ -1,0 +1,12 @@
+#XTerm*renderFont: true
+XTerm*faceName: Noto Mono:size=11
+XTerm*selectToClipboard: true
+XTerm*cutNewline: false
+XTerm*cutToBeginningOfLine: false
+XTerm*charClass: 33:48,37:48,42-43:48,45-47:48,64:48,95:48,126:48
+#XTerm*oldXtermFKeys: true
+#XTerm*deleteIsDEL: false
+#Xft.dpi: 96
+XTerm*vt100.translations: #override \
+    Ctrl <Key> V: insert-selection(CLIPBOARD)
+#Xcursor.theme: Adwaita
