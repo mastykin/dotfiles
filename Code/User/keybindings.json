@@ -548,7 +548,11 @@
 //        "when": "editorFocus",
         "intellij": "Open corresponding tool window (Debug)"
     },
-    { "key": "alt+5",                 "command": "-workbench.action.openEditorAtIndex5" },
+    {
+        "key": "alt+5",
+        "mac": "cmd+5",
+        "command": "workbench.view.extensions",
+    },
     { "key": "alt+6",                 "command": "-workbench.action.openEditorAtIndex6" },
     { "key": "alt+7",                 "command": "-workbench.action.openEditorAtIndex7" },
     { "key": "alt+8",                 "command": "-workbench.action.openEditorAtIndex8" },

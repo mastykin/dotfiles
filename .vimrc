@@ -18,7 +18,8 @@ set incsearch
 set hlsearch
 " Clear last search highlighting
 nnoremap <cr> :noh<CR><CR>:<backspace>
-nnoremap X <c-v>
+map <Esc>v <A-v>
+nnoremap <A-v> <c-v>
 
 "set tabstop=4           " use 4 spaces to represent tab
 "set softtabstop=4

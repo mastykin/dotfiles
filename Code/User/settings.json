@@ -32,5 +32,6 @@
     "editor.fontFamily": "Noto Mono",
     "markdown.preview.fontSize": 16,
     "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.autoClosingBrackets": "never",
     "workbench.activityBar.visible": false,
 }
