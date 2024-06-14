@@ -862,6 +862,14 @@
         "when": "textCompareEditorVisible"
     },
     {
+        "key": "f5",
+        "command": "merge-conflict.next",
+    },
+    {
+        "key": "shift+f5",
+        "command": "merge-conflict.previous",
+    },
+    {
         "key": "ctrl+f",
         "command": "-workbench.action.terminal.focusFind",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
