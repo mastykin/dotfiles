@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "cStandard": "c11",
+            "compilerPath": "/usr/bin/gcc",
+            "intelliSenseMode": "gcc-x64",
+//debian/build/build-generic/include/generated/autoconf.h      
+            "-forcedInclude": ["${workspaceFolder}/.vscode/autoconf.h"],
+            "compileCommands": "${workspaceFolder}/.vscode/compile_commands_5.15.json"
+        }
+    ],
+    "version": 4
+}

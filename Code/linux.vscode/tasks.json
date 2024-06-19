@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+	{
+		"label": "Generate compile_commands.json",
+		"type": "process",
+		"command": "python",
+		"args": [
+			"${workspaceFolder}/.vscode/generate_compdb.py"
+		],
+		"options": {
+			"cwd": "/home/m/chroot/smolensk17/home/u/linux/debian/build/build-generic"
+		},
+		"problemMatcher": []
+	},
+	{
+		"type": "shell",
+		"label": "CHROOT MODULE",
+		"command": "./make_module.sh",
+		"args": [
+			"${workspaceFolder}",
+			"${relativeFileDirname}",
+			"alse18",
+			"6.6.12-1-generic",
+			"CONFIG_LKDTM=m"
+		],
+		"problemMatcher": [
+			"$gcc"
+		],
+		"presentation": {
+			"clear": true
+		},
+		"options": {
+			"cwd": "/home/m/chroot"
+		},
+		"group": "build"
+	}
+]
+}

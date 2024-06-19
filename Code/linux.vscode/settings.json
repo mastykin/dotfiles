@@ -1,0 +1,11 @@
+{
+    "files.exclude": {
+        "**/.*.cmd": true,
+        "**/*.o": true,
+        "**/*.d": true,
+        "debian*": true
+    },
+    "editor.detectIndentation": false,
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false
+}
