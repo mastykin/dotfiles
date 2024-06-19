@@ -1,0 +1,85 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "make module local",
+            "command": "make",
+            "args": [
+                "-C",
+                "/usr/src/linux-headers-5.4.0-34-generic",
+                "M=${fileDirname}",
+                "modules"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "clear": true
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "CHROOT MODULE",
+            "command": "./make_module.sh",
+            "args": [
+                "${workspaceFolder}",
+                ".",
+                "smolensk17",
+                "5.15.0-33-generic"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "clear": true
+            },
+            "options": {
+                "cwd": "/home/m/chroot"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "CHROOT LAM",
+            "command": "./build_package.sh",
+            "args": [
+                "/home/m/Projects/lam",
+                "alse18",
+                "6.1.90-1"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "clear": true
+            },
+            "options": {
+                "cwd": "/home/m/chroot"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "CHROOT PACKAGE",
+            "command": "./build_package.sh",
+            "args": [
+                "${fileWorkspaceFolder}",
+                "alse18"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "clear": true
+            },
+            "options": {
+                "cwd": "/home/m/chroot"
+            },
+            "group": "build"
+        }
+    ]
+}
